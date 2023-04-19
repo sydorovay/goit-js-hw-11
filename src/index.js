@@ -3,6 +3,20 @@ import axios from 'axios';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+const elements = {
+  form: document.querySelector('.search-form'),
+  input: document.querySelector('input[name="searchQuery"]'),
+  submitBtn: document.querySelector('button'),
+  gallery: document.querySelector('.gallery'),
+  loadMoreBtn: document.querySelector('.load-more'),
+};
+
+// elements.input.addEventListener('input', value);
+
+// function value() {
+// 	console.log(elements.input.value)
+// }
+
 const axionsResponse = async () => {
   try {
     const axiosGet = await axios.get(
