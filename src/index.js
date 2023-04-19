@@ -1,5 +1,7 @@
 import Notiflix from 'notiflix';
 import axios from 'axios';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const axionsResponse = async () => {
   try {
@@ -10,5 +12,5 @@ const axionsResponse = async () => {
   } catch (error) {
     console.log(error);
   }
-}
-axionsResponse()
+};
+axionsResponse();
